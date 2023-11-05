@@ -24,4 +24,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/alpine:script
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/squid:script
