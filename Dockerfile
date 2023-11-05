@@ -13,7 +13,7 @@ RUN rm /etc/squid/squid.conf && wget -P /etc/squid https://raw.githubusercontent
     echo "auth_param basic realm ${AUTH_PARAM_BASIC_REALM}" >> /etc/squid/squid.conf && \
     echo "auth_param basic credentialsttl ${AUTH_PARAM_BASIC_CREDENTIALSTTL}" >> /etc/squid/squid.conf && \
     echo "acl auth_users proxy_auth REQUIRED" >> /etc/squid/squid.conf && \
-    echo "http_access allow all" >> /etc/squid/squid.conf
+    echo "http_access allow auth_users" >> /etc/squid/squid.conf
 
 EXPOSE 3128
 
