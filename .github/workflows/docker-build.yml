@@ -24,4 +24,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/squid:script
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/squid:latest
